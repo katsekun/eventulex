@@ -4,15 +4,26 @@ class eventulex extends CI_Controller
     // http://localhost/codeigniter/index.php/eventulex/
     public function index() // Página principal
     {
+
     	$this->load->helper(array('form', 'url'));
     	$this->load->library('table');
     	
         $this->load->model('eventulex_model','',TRUE);
 		$data['query'] = $this->eventulex_model->muestraEventos();
 
-        $this->load->view('eventCabecera.php');
-        $this->load->view('eventPrincipal.php',$data);
-        $this->load->view('eventPie.php');
+        $this->load->view('eventCabecera');
+        $this->load->view('eventPrincipal',$data);
+        $this->load->view('eventPie');
+    }
+
+    public function login()
+    {
+        $this->load->helper('url');
+        $this->load->helper('form');
+        $this->load->view('eventCabecera');
+        $this->load->view('login');
+        $this->load->view('eventPie');
+
     }
 
     public function usuarioValida()  //Validar usuario registrado

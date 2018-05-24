@@ -63,9 +63,8 @@ class eventulex extends CI_Controller
                   echo "<script>" .
                       "alert('Usuario no registrado');" .
                       "window.location.assign('" . site_url("/eventulex/acceso/") . "');</script>";
-                }
               }
-            
+            }
         }
         else // Error al validar
         {

@@ -1,14 +1,16 @@
-<div class="col-sm-12">
-<?php 
-	if(isset($query)) 
-    {
-        for($i=0;$i<count($query);$i++)
-        {
+<div class="container">
+	<div class="row">
+		<?php 
+		if(isset($query)) 
+		{
+			for($i=0;$i<count($query);$i++)
+			{
         	//e.id, e.nombre, e.lugar, e.maps, e.fecha_ini, e.fecha_fin, e.aforo, e.descripcion, e.logo, c.nombre
-            
-        	$this->table->add_row("<table border=1 id=" . $query[$i]->id . "><tr><td colspan='2'> " . $query[$i]->nombre . " (" . $query[$i]->cat . ")</td></tr><tr><td> " . $query[$i]->lugar . "<br>" .  $query[$i]->fecha_ini . " - " . $query[$i]->fecha_fin . "</td><td> " . $query[$i]->descripcion . "<br> " . $query[$i]->logo ."</td></tr></table>" );
-            echo $this->table->generate();
+
+				echo "<div class='col-md-6 text-center'>
+        	<table class='tabla_eventos' id=" . $query[$i]->id . " width='auto'><tr><td> " . $query[$i]->nombre . " (" . $query[$i]->cat . ")</td></tr><tr><td> " . $query[$i]->lugar . "<br>" .  $query[$i]->fecha_ini . " - " . $query[$i]->fecha_fin . "</td></tr><tr><td> " . $query[$i]->descripcion . "<br> " . $query[$i]->logo ."</td></tr></table></div>";// );
         }
     }
-?>
+    ?>
+	</div>
 </div>   

@@ -1,0 +1,4 @@
+.tabla_eventos, .tabla_eventos tr td{
+	border: 1px solid black;
+	padding: 10px !important;
+}

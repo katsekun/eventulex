@@ -1,6 +1,7 @@
-
+.row{
+    padding-top: 25px;
+}
 .login {
-    background:red !important;
     border-radius: 10px !important;
 }
 .registro {
@@ -13,7 +14,7 @@
 }
 .nav-item {
     padding-left: 10px;
-
+}
 .tabla_eventos, .tabla_eventos tr td{
 	border: 1px solid black;
 	padding: 10px !important;

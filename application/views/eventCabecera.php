@@ -41,34 +41,6 @@
 				<li class="nav-item">
 					<a class="nav-link login" href="/eventulex/login">Login</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link registro" href="/eventulex/nuevo_usuario">Registrarse</a>
-				</li>
 			</ul>
 		</div>
 	</nav>
-
-
-
-
-<!--
-<div class="navbar-header">
-	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-		<span class="icon-bar" style="background-color: white;"></span>
-	    <span class="icon-bar" style="background-color: white;"></span>
-	    <span class="icon-bar" style="background-color: white;"></span>            
-	</button>   
-</div>
-    
-<div class="navbar navbar-light"  id="myNavbar">  
-    <ul class="nav navbar-nav">
-    	<li class="active"><a href="<?php echo site_url();?>/    /eventos/">EVENTOS</a></li>
-        <li><a href="<?php echo site_url();?>/   /quienesSomos/">QUIENES SOMOS</a></li>
-        <li><a href="<?php echo site_url();?>/    /comoFunciona/">COMO FUNCIONAMOS</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="<?php echo site_url();?>/  /acceso">USUARIO</a></li>
-      <li><a href="<?php echo site_url();?>/  /nuevo">NUEVO USUARIO</a></li>
-    </ul>  
-
-</div>-->

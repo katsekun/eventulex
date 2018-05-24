@@ -5,8 +5,17 @@ class eventulex extends CI_Controller
     public function index() // Página principal
     {
     	$this->load->helper('url');
-        $this->load->view('eventCabecera.php');
-        $this->load->view('eventPrincipal.php');
-        $this->load->view('eventPie.php');
+        $this->load->view('eventCabecera');
+        $this->load->view('eventPrincipal');
+        $this->load->view('eventPie');
+    }
+
+    public function login()
+    {
+        $this->load->helper('url');
+        $this->load->helper('form');
+        $this->load->view('eventCabecera');
+        $this->load->view('login');
+        $this->load->view('eventPie');
     }
 }

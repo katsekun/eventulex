@@ -130,4 +130,15 @@ class eventulex extends CI_Controller
         $this->load->view('eventUserAcceso');
         $this->load->view('eventPie');
     }
+
+    public function cargaEvento($evento)
+    {
+    	$this->load->model('eventulex_model','',TRUE);
+		$data['query'] = $this->eventulex_model->fichaEvento($evento);
+		$data2['query'] = $this->eventulex_model->fichaEntradas($evento);
+
+    	$this->load->view('eventCabecera');
+        $this->load->view('eventFichaEvento',$data,$data2);
+        $this->load->view('eventPie');
+    }
 }

@@ -1,0 +1,15 @@
+.login {
+    background:red !important;
+    border-radius: 10px !important;
+}
+.registro {
+    background: darkgreen !important;
+    border-radius: 10px !important;
+    color: white !important;
+}
+.nav-link {
+    padding: 10px !important;
+}
+.nav-item {
+    padding-left: 10px;
+}

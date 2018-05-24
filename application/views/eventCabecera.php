@@ -29,22 +29,19 @@
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="/eventulex/eventos/">El tenis <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="/eventulex/">Eventos <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/eventulex/index.php/galeria">Galería</a>
+					<a class="nav-link" href="/eventulex/quienes_somos">Quienes somos</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/eventulex/index.php/quienes">Quienes somos</a>
+					<a class="nav-link" href="/eventulex/como_funcionamos">¿Cómo funcionamos?</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/eventulex/index.php/contacto">Contacto</a>
+					<a class="nav-link login" href="/eventulex/login">Login</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/eventulex/index.php/usuario">Usuario</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/eventulex/index.php/new_user">Nuevo usuario</a>
+					<a class="nav-link registro" href="/eventulex/nuevo_usuario">Registrarse</a>
 				</li>
 			</ul>
 		</div>
@@ -72,4 +69,4 @@
       <li><a href="<?php echo site_url();?>/  /acceso">USUARIO</a></li>
       <li><a href="<?php echo site_url();?>/  /nuevo">NUEVO USUARIO</a></li>
     </ul>  
-</div>
+</div>-->

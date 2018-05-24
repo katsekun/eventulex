@@ -21,7 +21,7 @@ class eventulex extends CI_Controller
         $this->load->helper('url');
         $this->load->helper('form');
         $this->load->view('eventCabecera');
-        $this->load->view('login');
+        $this->load->view('eventAcceso');
         $this->load->view('eventPie');
 
     }

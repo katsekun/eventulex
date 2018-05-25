@@ -38,6 +38,8 @@
 				<li class="nav-item">
 					<a class="nav-link" href="/eventulex/como_funcionamos">¿Cómo funcionamos?</a>
 				</li>
+
+				<!--Cambios en los enlaces-->
 				<li class="nav-item">
 					<a class="nav-link login" href="/eventulex/login">Login</a>
 				</li>

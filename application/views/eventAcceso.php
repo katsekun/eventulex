@@ -11,7 +11,7 @@
 				echo form_label('Contraseña', 'pass');
 				echo form_input('pass', set_value('pass', 'Contraseña'),'class="form-control"');
 				echo '<br>';
-				
+				 
 				echo form_submit('botonSubmit', 'Enviar');        
 				echo form_close();  
 			?>  

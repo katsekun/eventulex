@@ -1,7 +1,7 @@
 <?php
 class eventulex extends CI_Controller 
 {
-    // http://localhost/codeigniter/index.php/eventulex/
+    // http://localhost/eventulex/
     public function index() // Página principal
     {
 
@@ -126,6 +126,7 @@ class eventulex extends CI_Controller
 
     public function acceso()
     {
+    	$this->load->helper('url');
     	$this->load->view('eventCabecera');
         $this->load->view('eventUserAcceso');
         $this->load->view('eventPie');
@@ -133,12 +134,15 @@ class eventulex extends CI_Controller
 
     public function cargaEvento($evento)
     {
+    	$this->load->helper(array('form', 'url'));
+    	$this->load->library('table');
     	$this->load->model('eventulex_model','',TRUE);
 		$data['query'] = $this->eventulex_model->fichaEvento($evento);
-		$data2['query'] = $this->eventulex_model->fichaEntradas($evento);
+		$data2['query2'] = $this->eventulex_model->fichaEntradas($evento);
 
     	$this->load->view('eventCabecera');
-        $this->load->view('eventFichaEvento',$data,$data2);
+    	$this->load->view('eventPrincipal',$data);
+        $this->load->view('eventFichaEvento',$data2);
         $this->load->view('eventPie');
     }
 }
